@@ -276,7 +276,6 @@ a{
 }
 .box--forms > .box__container{
     display: none;
-    height: 35rem;
 
     width: max-content;
     padding: 1rem;
@@ -348,9 +347,21 @@ a{
     color: var(--White);
     border: 0rem;
 }
-@media screen and (max-width: 1280px) {
-    .box--forms{
-        bottom: 10vh;
+@media screen and (max-width: 720px) {
+    .box--forms > .box__container{
+        display: none;
+        flex-direction: column;
+    
+        width: max-content;
+        padding: 1rem;
+        background-color: var(--Pearl);
+        border: .6rem solid var(--Carrot-Orange);
+        border-radius: 1rem;
+    }
+    .box--forms .box__input:not(.box__input--submit),
+    .box--forms .box__label{
+        display: block;
+        width: 70vw;
     }
 }
 
@@ -362,7 +373,6 @@ a{
     z-index: 1100;
 
     width: max-content;
-    min-width: 20rem;
 
     background-color: var(--Jet);
     border-radius: 1rem;
@@ -374,7 +384,9 @@ a{
 .box--task > .box__container{
     display: block;
     height: 100%;
+    max-height: 29rem;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 .box--task .box__tarefa{
     display: none;
@@ -386,7 +398,7 @@ a{
     min-width: 20rem;
     width: 20vw;
 
-    min-height: 9rem;
+    min-height: 8rem;
     max-height: 12rem;
 
     margin: .4rem;
@@ -422,6 +434,16 @@ a{
 }
 .box--task .box__title{
     font-size: 2.4rem;
+}
+@media screen and (max-width: 720px) {
+    .box--task > .box__container{
+        display: flex;
+
+        width: 70vw;
+        min-width: 23rem;
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
 }
 
 /**/
