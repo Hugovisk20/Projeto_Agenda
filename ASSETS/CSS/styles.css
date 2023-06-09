@@ -470,4 +470,5 @@ a{
 .footer .box__list{
     list-style: none;
     line-height: 3rem;
+    transform: translateX(.4rem);
 }

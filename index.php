@@ -491,11 +491,21 @@ if(isset($_SESSION["EMAILUSER"]) && isset($_SESSION["NOMEUSER"])){
 
             <div class="box box--contatos">
 
-                <h2>Contatos</h2>
+                <h2>Colaboradores:</h2>
 
                 <ul class="box__list">
 
-                    <li class="box__item"></li>
+                    <li class="box__item">Hugo Otávio</li>
+
+                    <li class="box__item">Vinicius</li>
+
+                    <li class="box__item">Luis</li>
+
+                    <li class="box__item">Renan</li>
+
+                    <li class="box__item">João</li>
+
+                    <li class="box__item">William</li>
 
                 </ul>
 
