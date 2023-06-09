@@ -376,6 +376,7 @@ a{
 
     background-color: var(--Jet);
     border-radius: 1rem;
+    overflow: hidden;
 }
 .toggle--tasks{
     width: max-content;
